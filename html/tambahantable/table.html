@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Ibu Kota Negara</th>
+          <th>Jumlah penduduk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Beijing</td>
+          <td>2000000</td>
+        </tr>
+
+        <tr>
+          <td>Jakarta</td>
+          <td>2000000000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Ibu Kota Negara</th>
+          <th>Jumlah penduduk</th>
+        </tr>
+      </tfoot>
+    </table>
+    untuk membuat table <br />
+    <table border="2">
+      <thead>
+        <tr>
+          <th rowspan="2">Tahun</th>
+          <th colspan="3">Morris</th>
+        </tr>
+        <tr>
+          <th>Populasi</th>
+          <th>Nama</th>
+          <th>Lokasi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">7000 SM</td>
+          <td rowspan="3">1.000</td>
+          <td>Beid</td>
+          <td>basta</td>
+        </tr>
+        <tr>
+          <td>Beid</td>
+          <td>basta</td>
+        </tr>
+        <tr>
+          <td>Beid</td>
+          <td>basta</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+          <th colspan="2">example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#">button</a></td>
+          <td>digunakan untuk membuat button</td>
+          <td><input type="button" value="example button" /></td>
+          <td><input type="reset" value="for reset" /></td>
+        </tr>
+        <tr>
+          <td><a href="#">checkbox</a></td>
+          <td>digunakan untuk membuat pilihan ganda serta ada grup nya</td>
+          <td>
+            <input type="checkbox" name="subs" id="#" value="its me" />
+            <label for="subscribeNews">coba tekan</label>
+          </td>
+          <td>
+            <div>
+              <input
+                type="checkbox"
+                id="coding"
+                name="interest"
+                value="coding"
+              />
+              <label for="coding">Coding</label>
+            </div>
+            <div>
+              <input type="checkbox" id="music" name="interest" value="music" />
+              <label for="music">Music</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">color</a></td>
+          <td>digunakan untuk menampilkan warna</td>
+          <td colspan="2">
+            <input type="color" name="skin" id="skin" value="0C0C0C" />
+            <label for="skin">dark skin</label>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">Date</a></td>
+          <td>digunakan untuk menampilkan / mengisi tanggal</td>
+          <td>
+            <input type="datetime-local" name="Start" />
+            <!-- untuk menampilkan tanggal beserta waktu -->
+            <input type="datetime" name="" id="" />
+            <!-- untuk menampilkan waktu -->
+          </td>
+          <td>
+            <input
+              type="date"
+              name=""
+              id=""
+              id="Date Time"
+              min="2017-04-01"
+              max="2017-04-01"
+            />
+          </td>
+          <!-- hanya untuk menampilkan tanggal min & max diisi dengan thn-bln-hari -->
+        </tr>
+        <tr>
+          <td><a href="#">email</a></td>
+          <td>digunakan untuk mengisi email</td>
+          <td colspan="2">
+            <label for="email">Enter your email:</label>
+
+            <input
+              type="email"
+              id="email"
+              pattern=".+@example\.com"
+              size="30"
+              placeholder="yourself@example.com"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">File input</a></td>
+          <td>digunakan untuk upload file</td>
+          <td colspan="2">
+            <label for="avatar">Choose a profile picture:</label>
+
+            <input
+              type="file"
+              id="avatar"
+              name="avatar"
+              accept="image/*, video/*, audio/*"
+              multiple
+            />
+            <!-- capture="environment" untuk memakai kamera -->
+            <!-- <input type="image" id="image" alt="Login" src="/media/examples/login-button.png" /> 
+            digunakan untuk menampilkan gambar -->
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">number</a></td>
+          <td>digunakan untuk input number</td>
+          <td colspan="2">
+            <label for="tentacles">Number of tentacles (10-100):</label>
+            <input
+              type="number"
+              id="tentacles"
+              name="tentacles"
+              min="10"
+              max="100"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">pw</a></td>
+          <td>digunakan untuk input pw</td>
+          <td colspan="2">
+            <label for="pass">Password (8 characters minimum):</label>
+            <input
+              type="password"
+              id="pass"
+              name="password"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">radio</a></td>
+          <td>digunakan untuk pilihan salah satu</td>
+          <td colspan="2">
+            <div>
+              <input type="radio" name="contoh1" id="contoh1" />
+              <label for="contoh1">contoh1</label>
+            </div>
+            <div>
+              <input type="radio" name="contoh1" id="contoh1" />
+              <label for="contoh1">contoh2</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">range</a></td>
+          <td>digunakan untuk setting dengan menggeser point</td>
+          <td colspan="2">
+            <div>
+              <input type="range" id="volume" name="volume" min="0" max="11" />
+              <label for="volume">Volume</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">search</a></td>
+          <td>digunakan untuk search</td>
+          <td colspan="2">
+            <label for="site-search">Search the site:</label>
+            <input type="search" id="site-search" name="q" />
+
+            <button>Search</button>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">telephone</a></td>
+          <td>digunakan untuk isi telephone</td>
+          <td colspan="2">
+            <input type="tel" name="" id="" placeholder="08--" />
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">text biasa</a></td>
+          <td>digunakan untuk isi kata kata</td>
+          <td>
+            <input type="text" name="" id="" placeholder="contoh1" />
+          </td>
+          <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+          <td><a href="#">url</a></td>
+          <td>digunakan untuk isi link🤨</td>
+          <td colspan="2">
+            <label for="url">Enter an https:// URL:</label>
+            <input
+              type="url"
+              name="url"
+              id="url"
+              placeholder="https://example.com"
+              pattern="https://.*"
+              size="30"
+              required
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <form action="/contoh" method="get">
+      <table border="2">
+        <thead>
+          <tr>
+            <th>isikan</th>
+          </tr>
+          <tr>
+            <th>username <input type="text" name="" id="" /></th>
+          </tr>
+          <tr>
+            <th>
+              <textarea
+                name="pendapat anda "
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="isikan pendapat"
+              ></textarea>
+            </th>
+          <tr>
+          <tr>
+            <th>
+              isikan pw<input
+                type="password"
+                name=""
+                id=""
+                minlength="2"
+                autocomplete="new-password"
+                required
+              />
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="baju"
+                id="baju1"
+                value="kaos"
+                checked
+              />Baju kaos
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="baju" id="baju1" value="kemeja" />Baju
+              kemeja
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label for="ukuran">Ukuran</label>
+              <select name="ukuran" id="ukuran">
+                <option value="" selected>pilih ukuran baju</option>
+                <option value="small">small</option>
+                <option value="large">large</option>
+                <option value="big">Big</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="submit ya" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <!-- semantic table
+        pada bagian for = "" di label, biasanya value nya sama dengan id di input
+        bisa menggunakan tag div untuk merapihkan form / input nya
+        input button hanya untuk button sedangkan tag button digunakan untuk mengirim data / pindah halaman submit pun begitu
+        semua tag submit akan ke link / page tertentu tergantung dari atribut action di tag form
+        tag name berfungsi untuk mengirimkan data ke database
+        method di tag form berfungsi untuk mengirimkan data ke database juga
+        pada radio button ingat selau untuk menggunakan value name yang sama agar hanya terjadi 1 pilihan
+        pada bagian inputan ke database akan seperti ini name = value jika value kosong maka default nya on,
+        harap isi name dan value nya dalam input di html
+        atribut checked berfungsi sebagai default pilihan radio button
+        atribut selected berfungsi sebagai default pilihan select button
+        tambahan atribut
+        - min untuk minimal kata
+        - max maksimal kata
+        - required wajib di isi
+
+        
+
+    -->
+  </body>
+</html>
